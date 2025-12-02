@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Door-to-Door Car Wash Service</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: #f3f6fa;
+            color: #333;
+        }
+
+        header {
+            background: #0d6efd;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        /* -------------------- HERO SLIDER -------------------- */
+
+        .slider {
+            width: 100%;
+            height: 350px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slides {
+            display: flex;
+            width: 300%;
+            height: 100%;
+            animation: slide 12s infinite;
+        }
+
+        .slides img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(0%); }
+            33% { transform: translateX(-100%); }
+            66% { transform: translateX(-200%); }
+            100% { transform: translateX(0%); }
+        }
+
+        /* -------------------- CTA BUTTON -------------------- */
+
+        .hero-text {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .hero-text h1 {
+            font-size: 34px;
+            font-weight: 600;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            margin-top: 8px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #0d6efd;
+            padding: 14px 26px;
+            color: white;
+            margin-top: 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #084dbf;
+            transform: scale(1.05);
+        }
+
+        /* -------------------- SECTION BOX -------------------- */
+
+        .section {
+            background: white;
+            margin: 25px auto;
+            padding: 25px;
+            width: 90%;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* -------------------- FEATURES GRID -------------------- */
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .feature-box {
+            background: #eef3ff;
+            padding: 20px;
+            width: 45%;
+            text-align: center;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            font-size: 18px;
+            transition: 0.4s;
+        }
+
+        .feature-box:hover {
+            transform: translateY(-8px);
+            background: #dce7ff;
+        }
+
+        /* -------------------- FLOATING IMAGE GALLERY -------------------- */
+
+        .gallery {
+            display: flex;
+            overflow-x: auto;
+            gap: 10px;
+            padding: 10px;
+            scroll-behavior: smooth;
+        }
+
+        .gallery img {
+            width: 260px;
+            height: 160px;
+            border-radius: 12px;
+            object-fit: cover;
+            transition: 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.07);
+        }
+
+        /* -------------------- FOOTER -------------------- */
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #0d6efd;
+            color: white;
+            margin-top: 40px;
+            font-size: 16px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    🚗 Door-to-Door Car Wash Service
+</header>
+
+<!-- HERO IMAGE SLIDER -->
+<div class="slider">
+    <div class="slides">
+        <img src="https://images.pexels.com/photos/4870707/pexels-photo-4870707.jpeg" />
+        <img src="https://images.pexels.com/photos/6870321/pexels-photo-6870321.jpeg" />
+        <img src="https://images.pexels.com/photos/97075/pexels-photo-97075.jpeg" />
+    </div>
+</div>
+
+<div class="hero-text">
+    <h1>Fast • Affordable • At Your Home</h1>
+    <p>Professional car cleaning delivered to your doorstep.</p>
+    <a class="btn" href="https://wa.me/919999999999" target="_blank">📱 Book on WhatsApp</a>
+</div>
+
+<!-- SERVICES -->
+<div class="section">
+    <h2>Our Services</h2>
+    <div class="features">
+        <div class="feature-box">🚘 Exterior Car Wash</div>
+        <div class="feature-box">🧹 Interior Vacuum Cleaning</div>
+        <div class="feature-box">✨ Dashboard Polishing</div>
+        <div class="feature-box">🏍 Two-Wheeler Wash</div>
+    </div>
+</div>
+
+<!-- FLOATING GALLERY -->
+<div class="section">
+    <h2>Live Gallery</h2>
+    <div class="gallery">
+        <img src="https://images.pexels.com/photos/6870321/pexels-photo-6870321.jpeg">
+        <img src="https://images.pexels.com/photos/4870707/pexels-photo-4870707.jpeg">
+        <img src="https://images.pexels.com/photos/97075/pexels-photo-97075.jpeg">
+        <img src="https://images.pexels.com/photos/6195198/pexels-photo-6195198.jpeg">
+    </div>
+</div>
+
+<!-- WHY CHOOSE US -->
+<div class="section">
+    <h2>Why Choose Us?</h2>
+    <ul style="font-size: 18px; line-height: 1.8;">
+        <li>✔ We come to your home</li>
+        <li>✔ Affordable pricing</li>
+        <li>✔ Professional equipment</li>
+        <li>✔ Fast & reliable service</li>
+        <li>✔ Eco-friendly cleaning solutions</li>
+    </ul>
+</div>
+
+<!-- CONTACT -->
+<div class="section">
+    <h2>Contact</h2>
+    <p>Name: <b>Manjinder</b></p>
+    <p>Phone: <b>8360867338</b></p>
+    <p>WhatsApp: <a href="https://wa.me/8360867338" target="_blank">Chat Now</a></p>
+    <p>Location: Your City</p>
+</div>
+
+<footer>
+    © 2025 Door-to-Door Car Wash Service
+</footer>
+
+<script>
+    console.log("Website Loaded Successfully!");
+</script>
+
+</body>
+</html>
